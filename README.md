@@ -1,6 +1,6 @@
 # Cloning Newsweek Web Page using Bootsrap
 
-> This web page is the seventh project in the Microverse course and it's objetive is practice the use of a framework for CSS as is Bootstrap.
+> This web page is the seventh project in the Microverse course and its objective is to practice the use of a framework for CSS as is Bootstrap.
 
 ![screenshot](./screenshot.png)
 
