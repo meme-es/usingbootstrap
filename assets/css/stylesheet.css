@@ -7,6 +7,15 @@ body {
   font-family: 'Roboto Condensed', sans-serif;
 }
 
+.container,
+.header-bottom {
+  max-width: 1310px;
+}
+
+.header-bottom {
+  margin: 0 auto;
+}
+
 a {
   color: black;
 }
@@ -46,6 +55,12 @@ a:hover {
   height: 25px;
   background-image: url(../images/img-social.png);
   background-repeat: no-repeat;
+}
+
+.search-space a {
+  padding-top: 3px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
 }
 
 h3 a:hover,
@@ -254,7 +269,7 @@ h6 a:hover {
 }
 
 .col-r {
-  height: 190px;
+  height: 301px;
 }
 
 .col-l {
@@ -308,19 +323,149 @@ h6 a:hover {
   color: #666;
 }
 
-@media (min-width: 992px) {
-  .col-r {
-    height: 301px;
+.header-bottom::before {
+  position: absolute;
+  width: 78px;
+  top: 0;
+  right: 0;
+  content: "";
+  display: block;
+  background-color: #f72210;
+  border-left: 12px solid white;
+  border-top: 13px solid #f72210;
+}
+
+.empty-space {
+  max-width: 88px;
+  min-width: 88px;
+}
+
+.search-space {
+  max-width: 70px;
+  min-width: 70px;
+}
+
+.ico-space {
+  max-width: 20px;
+  min-width: 20px;
+  background-image: url(../images/icon-search.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.small-headear {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 100%;
   }
 }
 
-@media (min-width: 1200px) {
-  .container,
-  .header-bottom {
-    max-width: 1310px;
+@media (max-width: 992px) {
+  .col-r {
+    height: 190px;
   }
 
-  .header-bottom {
-    margin: 0 auto;
+  .hide-at-small {
+    display: none;
+  }
+
+  header .container {
+    width: 100%;
+    padding: 0;
+  }
+
+  .header-top {
+    display: none;
+  }
+
+  .small-headear {
+    display: flex;
+    background-color: #f72210;
+    justify-content: space-between;
+  }
+
+  .first,
+  .second {
+    display: flex;
+    align-items: center;
+  }
+
+  .first .weather {
+    padding-left: 20px;
+  }
+
+  .header-logo {
+    padding-left: 22px;
+    max-width: 162px;
+    min-width: 162px;
+  }
+
+  .ham-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 74px;
+    cursor: pointer;
+  }
+
+  .weather-country {
+    display: inline;
+  }
+
+  .ham-menu::before,
+  .ham-menu > span,
+  .ham-menu::after {
+    width: 30px;
+    height: 4px;
+    background-color: #fb9a94;
+    margin: 2px auto;
+    content: "";
+  }
+
+  .sponsor {
+    max-width: 330px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  
+}
+
+@media (max-width: 630px) {
+  .weather-country {
+    display: none;
+  }
+}
+
+@media (max-width: 520px) {
+  .ham-menu {
+    width: 50px;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  .second {
+    min-width: 190px;
+  }
+
+  .the-sign-in a {
+    padding: 0 5px !important;
+    font-size: 14px !important;
+  }
+}
+
+@media (max-width: 440px) {
+  .weather {
+    display: none;
   }
 }

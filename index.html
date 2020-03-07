@@ -20,20 +20,40 @@
               <span class="weather-country">Guatemala, GT <img class="img-fluid" src="./assets/images/white-arrow.png" alt="White arrow"></span>
             </a>
           </div>
-          <div>Mon, Mar 02, 2020</div>
-        </div>
+          <div class="hide-at-small">Mon, Mar 02, 2020</div>
+        </div>        
         <div class="header-middle col-4">
           <a href="#"><img class="img-fluid" src="./assets/images/newsweek-logo-white.svg" alt="Newsweek logo"></a>
         </div>
-        <div class="col-4 d-flex justify-content-end align-items-end">
-          <a class="d-inline-block text-white font-weight-bold pr-3" href="#" >SIGN IN</a>
+        <div class="the-sign-in col-4 d-flex justify-content-end align-items-end">
+          <a class="d-inline-block text-white font-weight-bold pt-1 pr-3" href="#" >SIGN IN</a>
           <a class="d-inline-block text-red font-weight-bold bg-light pt-1 px-3" href="#" >SUBSCRIBE &nbsp; &#10095;</a>
+        </div>
+      </div>
+      <div class="small-headear text-white">
+        <div class="first">
+          <div class="header-logo">
+            <a href="#"><img class="img-fluid" src="./assets/images/newsweek-logo-white.svg" alt="Newsweek logo"></a>
+          </div>
+          <div class="weather font-weight-bold">
+            <a class="text-white" href="#">
+              <img width="25" src="./assets/images/weather-icon.png" alt="Weather icon"> 28°
+              <span class="weather-country">Guatemala, GT <img class="img-fluid" src="./assets/images/white-arrow.png" alt="White arrow"></span>
+            </a>
+          </div>
+        </div>
+        <div class="second">
+          <div class="the-sign-in d-flex justify-content-end align-items-end">
+            <a class="d-inline-block text-white font-weight-bold px-1 pr-3" href="#" >SIGN IN</a>
+            <a class="d-inline-block text-red font-weight-bold bg-light px-1 px-3" href="#" >SUBSCRIBE <span class="arrow"> &nbsp; &#10095;</span></a>
+          </div>
+            <div class="ham-menu"><span></span></div>
         </div>
       </div>
     </div>
 
-    <div class="header-bottom py-3 bg-white">
-      <ul class="page-nav d-flex nav font-weight-bold">
+    <div class="header-bottom py-3 bg-white position-relative hide-at-small">
+      <ul class="page-nav d-flex nav font-weight-bold flex-wrap">
         <li class="first leaf flex-fill border-right"><a class="link d-block text-center" href="#">U.S.</a></li>
         <li class="leaf flex-fill border-right"><a class="link d-block text-center" href="#">World</a></li>
         <li class="leaf flex-fill border-right"><a class="link d-block text-center" href="#">Business</a></li>
@@ -45,10 +65,11 @@
         <li class="leaf flex-fill border-right"><a class="link d-block text-center" href="#">The Debate</a></li>
         <li class="leaf flex-fill border-right"><a class="link d-block text-center" href="#">Vantage</a></li>
         <li class="last flex-fill"><a class="link d-block text-center" href="#">Weather</a></li>
-        <li class="last flex-fill"><a class="link d-block text-center" href="#">Search</a></li>
-        <li class="last flex-fill"><a class="link d-block text-center" href="#">Ico</a></li>
+        <li class="last flex-fill search-space font-weight-normal"><a class="link d-block text-center text-secondary" href="#">Search</a></li>
+        <li class="last flex-fill ico-space"><a class="link d-block text-center" href="#"></a></li>
+        <li class="last flex-fill empty-space"><a class="link d-block text-center" href="#"></a></li>
       </ul>
-    </div>
+    </div>  
   </header>
 
   <main>
@@ -92,8 +113,8 @@
                         "There is no reason for undue anxiety—the general risk remains low in New York," Governor Andrew Cuomo said.
                       </div>
                       <ul class="related nav font-weight-bold">
-                        <li class="related-item"><a href="#">Rhode Island Announces First Coronavirus Patient After First U.S. Death</a></li>
-                        <li class="related-item"><a href="#">Surgeon General Urges People to Stop Buying Masks Amid Coronavirus Panic</a></li>
+                        <li class="related-item border-top py-2"><a href="#">Rhode Island Announces First Coronavirus Patient After First U.S. Death</a></li>
+                        <li class="related-item border-top border-bottom py-2"><a href="#">Surgeon General Urges People to Stop Buying Masks Amid Coronavirus Panic</a></li>
                       </ul>
                     </article>
                     <article class="py-2">
@@ -845,7 +866,7 @@
           <div class="row pb-4">
             <div class="col-sm-12 col-md-4">
               <article>
-                <div class="image"><a href="#"><img src="./assets/images/pick-world-01.jpg" alt="Image for the picks world section, one"></a></div>
+                <div class="image"><a href="#"><img class="img-fluid" src="./assets/images/pick-world-01.jpg" alt="Image for the picks world section, one"></a></div>
                 <h5 class="font-weight-bold py-2"><a href="#">The National Is the Latest Band to Cancel a Tour Amid Coronavirus Fears</a></h5>
               </article>
             </div>
