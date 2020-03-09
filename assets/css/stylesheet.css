@@ -1,11 +1,65 @@
-/* * {
-  border: 1px solid purple;
-} */
-
 body {
   background-color: #f4f5f6;
   font-family: 'Roboto Condensed', sans-serif;
 }
+
+/* sticky navbar styling here */
+.small-headear {
+  display: none;
+  background-color: #f72210;
+  justify-content: space-between;
+  z-index: 100;
+}
+
+.sticky-nav {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.first,
+.second {
+  display: flex;
+  align-items: center;
+}
+
+.first .weather {
+  padding-left: 20px;
+}
+
+.header-logo {
+  padding-left: 22px;
+  max-width: 162px;
+  min-width: 162px;
+}
+
+.ham-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 74px;
+  cursor: pointer;
+}
+
+.weather-country {
+  display: inline;
+}
+
+.ham-menu::before,
+.ham-menu > span,
+.ham-menu::after {
+  width: 30px;
+  height: 4px;
+  background-color: #fb9a94;
+  margin: 2px auto;
+  content: "";
+}
+
+/* end of the sticky navbar */
 
 .container,
 .header-bottom {
@@ -55,12 +109,6 @@ a:hover {
   height: 25px;
   background-image: url(../images/img-social.png);
   background-repeat: no-repeat;
-}
-
-.search-space a {
-  padding-top: 3px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
 }
 
 h3 a:hover,
@@ -343,6 +391,14 @@ h6 a:hover {
 .search-space {
   max-width: 70px;
   min-width: 70px;
+  padding-top: 2px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.search-space input {
+  max-width: 68px;
+  min-width: 68px;
 }
 
 .ico-space {
@@ -354,17 +410,21 @@ h6 a:hover {
   background-size: contain;
 }
 
-.small-headear {
-  display: none;
-}
-
 @media (max-width: 1200px) {
   .container {
     max-width: 100%;
   }
+
+  .header-top {
+    display: flex;
+  }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
+  main {
+    padding-top: 50px;
+  }
+
   .col-r {
     height: 190px;
   }
@@ -382,50 +442,12 @@ h6 a:hover {
     display: none;
   }
 
-  .small-headear {
+  #navbar {
     display: flex;
-    background-color: #f72210;
-    justify-content: space-between;
-  }
-
-  .first,
-  .second {
-    display: flex;
-    align-items: center;
-  }
-
-  .first .weather {
-    padding-left: 20px;
-  }
-
-  .header-logo {
-    padding-left: 22px;
-    max-width: 162px;
-    min-width: 162px;
-  }
-
-  .ham-menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 50px;
-    width: 74px;
-    cursor: pointer;
-  }
-
-  .weather-country {
-    display: inline;
-  }
-
-  .ham-menu::before,
-  .ham-menu > span,
-  .ham-menu::after {
-    width: 30px;
-    height: 4px;
-    background-color: #fb9a94;
-    margin: 2px auto;
-    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
   }
 
   .sponsor {
@@ -435,7 +457,7 @@ h6 a:hover {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .image img {
     width: 100%;
   }

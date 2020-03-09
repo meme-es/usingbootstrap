@@ -1,10 +1,10 @@
-# Cloning Newsweek Web Page using Bootsrap
+# Cloning Newsweek Web Page Using Bootsrap
 
 > This web page is the seventh project in the Microverse course and its objective is to practice the use of a framework for CSS as is Bootstrap.
 
 ![screenshot](./screenshot.png)
 
-The URL of the Newsweek site is [here](https://www.newsweek.com/), acording to the date, the style of the web page may vary.
+The URL of the Newsweek site is [here](https://www.newsweek.com/), according to the date, the style of the web page may vary.
 
 ## Built With
 

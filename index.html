@@ -30,7 +30,7 @@
           <a class="d-inline-block text-red font-weight-bold bg-light pt-1 px-3" href="#" >SUBSCRIBE &nbsp; &#10095;</a>
         </div>
       </div>
-      <div class="small-headear text-white">
+      <div id="navbar" class="small-headear text-white">
         <div class="first">
           <div class="header-logo">
             <a href="#"><img class="img-fluid" src="./assets/images/newsweek-logo-white.svg" alt="Newsweek logo"></a>
@@ -52,9 +52,9 @@
       </div>
     </div>
 
-    <div class="header-bottom py-3 bg-white position-relative hide-at-small">
-      <ul class="page-nav d-flex nav font-weight-bold flex-wrap">
-        <li class="first leaf flex-fill border-right"><a class="link d-block text-center" href="#">U.S.</a></li>
+    <div id="navlinks" class="header-bottom py-3 bg-white position-relative hide-at-small">
+      <ul class="page-nav d-flex nav font-weight-bold">
+        <li class="leaf flex-fill border-right"><a class="link d-block text-center" href="#">U.S.</a></li>
         <li class="leaf flex-fill border-right"><a class="link d-block text-center" href="#">World</a></li>
         <li class="leaf flex-fill border-right"><a class="link d-block text-center" href="#">Business</a></li>
         <li class="leaf flex-fill border-right"><a class="link d-block text-center" href="#">Tech & Science</a></li>
@@ -65,7 +65,11 @@
         <li class="leaf flex-fill border-right"><a class="link d-block text-center" href="#">The Debate</a></li>
         <li class="leaf flex-fill border-right"><a class="link d-block text-center" href="#">Vantage</a></li>
         <li class="last flex-fill"><a class="link d-block text-center" href="#">Weather</a></li>
-        <li class="last flex-fill search-space font-weight-normal"><a class="link d-block text-center text-secondary" href="#">Search</a></li>
+        <li class="last flex-fill search-space font-weight-normal">
+          <form action="#">
+            <input type="text" name="search" id="i-search" placeholder="Search" class="border-0">
+          </form>
+        </li>
         <li class="last flex-fill ico-space"><a class="link d-block text-center" href="#"></a></li>
         <li class="last flex-fill empty-space"><a class="link d-block text-center" href="#"></a></li>
       </ul>
@@ -712,9 +716,9 @@
             <article class="col-sm-12 col-md-3">
               <div class="wrap">
                 <div class="image"><a href="#"><img class="img-fluid" src="./assets/images/magazine-08.jpg" alt="Image for the magazine section, eight"></a></div>
-                <div class="category">
-                  <span class="category">IN FOCUS</span>
-                </div>  
+                <div class="category-below font-weight-bold">
+                  <span class="main-cat text-white d-inline-block py1 px-2 mt-1">IN FOCUS</span>
+                </div>
               </div>
               <h5 class="title font-weight-bold py-2"><a href="#">FIGHTING BACK</a></h5>
             </article>
@@ -1140,5 +1144,21 @@
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script>
+    window.onscroll = function() { sticky() };
+
+    var lenght_offset = document.getElementById("navlinks").offsetTop;
+    var navbar = document.getElementById("navbar");
+
+
+    function sticky() {
+      if ((window.pageYOffset >= lenght_offset && window.pageYOffset > 991) || (window.pageYOffset >= 50 && window.pageYOffset <= 991))
+        navbar.classList.add("sticky-nav");
+      else
+        navbar.classList.remove("sticky-nav");
+    }
+
+  </script>
+
 </body>
 </html>
