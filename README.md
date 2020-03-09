@@ -14,8 +14,7 @@ The URL of the Newsweek site is [here](https://www.newsweek.com/), according to 
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/meme-es/usingbootstrap/develop/)
-
+[Live Demo Link](https://meme-es.github.io/usingbootstrap/)
 
 ## Authors
 
